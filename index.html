@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lily Chou</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: rgb(78, 78, 78);
+        }
+
+        .content {
+            margin-left: 10%;
+            margin-right: 10%;
+            background-color: rgb(255, 255, 255);
+            padding-left: 2%;
+            padding-right: 2%;
+        }
+
+        .title {
+            text-align: center;
+        }
+    </style>
+    <script src="https://unpkg.com/@waline/client@v2/dist/waline.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css" />
+</head>
+
+<body>
+    <div class="content">
+        <div class="title">
+            <h1>
+                本站反向代理列表
+            </h1>
+        </div>
+        <div class="list">
+            <p>
+                <a href="https://fastly.jsdelivr.lilychou.tk/" target="_blank">
+                    <img src="./img/4ca3c10e-cd32-4705-803b-fb26f84e40fe.png" width="300px">
+                    <p>Jsdelivr反代 请勿用于重要场合 跑路时间不定</p>
+                </a>
+            </p>
+            <p>
+                <a href="https://hub.lilychou.tk">
+                    <img src="./img/44794c75-428f-4a91-92e8-4185036f6cf1.png" width="300px">
+                    <p>Github残废版反代 受限于Vercel 只能浏览，Release下载，Artifact下载和Usercontent都不能用</p>
+                </a>
+            </p>
+            <p>
+                <a href="https://piped.lilychou.tk">
+                    <img src="./img/e93a764f-a324-45d7-b491-47504e47bd03.png" width="300px">
+                    <p>Piped半残反代 所有图片都不能加载 依然是Vercel的锅 视频能不能播放看运气</p>
+                </a>
+            </p>
+            <p>所有反代都是通过vercel.json中的rewrites实现</p>
+        </div>
+        <div class="title">
+            <h1>
+                本站自搭建服务
+            </h1>
+        </div>
+        <div class="list">
+            <p>
+                <a href="https://rsshub.lilychou.tk">
+                    <img src="./img/3d0684bd-6219-4b60-b76c-6101ea6b2e8b.png" width="300px">
+                    <p>RSSHub 默认配置</p>
+                </a>
+            </p>
+        </div>
+    </div>
+    <div class="comment">
+        <div id="commentarea"></div>
+        <script>
+            Waline.init({
+                el: '#commentarea',
+                serverURL: 'https://comment.lilychou.tk/',
+            });
+        </script>
+    </div>
+</body>
+
+</html>
